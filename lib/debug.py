@@ -7,4 +7,17 @@ from classes.many_to_many import Review
 
 if __name__ == '__main__':
     # don't remove this line, it's for debugging!
+
+    # Hotels
+    marriott = Hotel("Marriott")
+    the_chanler_at_cliff_walk = Hotel("Chanler Hotel")
+
+    # Customers
+    alice_baker = Customer("Alice", "Baker")
+    bob_carris = Customer("Bob", "Carris")
+
+    # Review
+    review_1 = Review(marriott, alice_baker, 5, "Best hotel ever!")
+    review_2 = Review(the_chanler_at_cliff_walk, alice_baker, 5, "Pretty awesome amenities here!")
+    review_3 = Review(marriott, alice_baker, 3, "Not as great as my first visit.")
     ipdb.set_trace()
